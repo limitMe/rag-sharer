@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ragsharer-钟典是怎么打码的</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/code_pretty.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    
+    
+  <body onload="prepareContent()">
+    <!-- fixed nav bar -->
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="index.html">主页</a>
+          <a class="blog-nav-item" href="#">类别</a>
+          <a class="blog-nav-item" href="#">关于</a>
+          <a class="blog-nav-item" href="new.html">新增</a>
+        </nav>
+      </div>
+    </div>
+      
+    
+      
+    <div class="container">
+      <div class="blog-header">
+        <h1 class="blog-title">RagSharer</h1>
+        <p class="lead blog-description">码自钟典，中国人民大学学生，专注于移动端解决方案的轻量级开发者</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          <!-- 博客范例 -->
+          <div class="blog-post" id="the-blog-post-area">
+            <!-- 从meta文件自动添加 -->
+            <h2 class="blog-post-title" id="the-blog-post-title">博客标题</h2>
+            <p class="blog-post-meta" id="the-blog-post-date">2015年1月30日 </p><p class="blog-post-control" id="the-blog-post-editor"><a href="#">编辑</a></p>
+            <p style="clear:both"></p>
+            
+            <!-- 从content文件动态添加 -->
+            <div id="dynamical-appended">
+            <p>RDS上我选择了mySQL5.5，系统反正白送，5G空间不用也不好，用来存储用户的基本资料还是很可以。但是结果一用发现开发难度上加大了好多，7月28号开始就被这个整的无心恋战。最初看了点linq，后来发现linq to sql对mysql支持并不原生，想要使用还非得借助alinq或者ef，一步步觉得心塞。</p>
+            <blockquote>
+              <p>引言范例：<strong>钟典曾经说过</strong>说了你也不懂！</p>
+            </blockquote>
+            <p>This line is English Example: Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+            <h2>大标题</h2>
+            <p>作为一个非常激进的童鞋，我一下子就选择了windows server 2012 x64的操作系统，安装了iis，不知道现在能不能正确使用webAPI访问了。当然选择2012版，其自带的.net 4.5更给我提供了现在所有能够用到资源的应用环境。</p>
+            <h3>小标题</h3>
+            <p>接下来是一段代码范例：</p>
+            <!-- 不要忘了pre的类属性应用高亮 -->
+            <pre class=”prettyprint linenums Lang-html”>
+string connStr = "server=myaibig1.mysql.rds.aliyuncs.com;"
+    +"user=testor;database=testdata;port=3306;password=bugaosuni;";
+//This is the connect string to my RDS. Of course the password is a joke.
+MySqlConnection conn = new MySqlConnection(connStr);
+try
+{
+    Console.WriteLine("Connecting to MySQL...");
+    conn.Open();
+    // Perform database operations
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.ToString());
+}
+conn.Close();
+Console.WriteLine("Done.");
+            </pre>
+            <p>无序列表例子</p>
+            <ul>
+              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+              <li>Donec id elit non mi porta gravida at eget metus.</li>
+              <li>Nulla vitae elit libero, a pharetra augue.</li>
+            </ul>
+            <p>有序列表例子</p>
+            <ol>
+              <li>Vestibulum id ligula porta felis euismod semper.</li>
+              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+            </ol></div>
+          </div><!-- /.blog-post -->
+
+          
+          <nav>
+            <ul class="pager">
+              <li><a href="javascript:void(0)" onclick="previousPost()">上一篇</a></li>
+              <li><a href="javascript:void(0)" onclick="nextPost()">下一篇</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>关于</h4>
+            <p>钟典目前就读于中国人民大学信息学院2013级，非常乐意与年轻有朝气的朋友并肩而行，尤其是那些希望通过移动互联网让世界更有趣的小伙伴们，一定要找我搭讪哦！</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>时间轴</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">2015年1月</a></li>
+              <li><a href="#">2014年12月</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>更多</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
+    </div>
+      
+    <footer class="blog-footer">
+      <p>钟典基于<a href="http://www.bootcss.com">Bootstrap</a>与<a href="http://www.asp.net/web-api">ASP.NET WebAPI技术</a>构建</p>
+      <p>
+        <a href="#">回顶端</a>
+      </p>
+    </footer>
+      
+
+    <!-- use CDN to enhance the speed -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/code_pretty.js"></script>
+    <script src="js/RagSharer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+文件将会默认存在iis/express或者IIS的POSTS目录下，请确保IIS USERS对该目录的读写权限
+LIST文件每行内容是"ID/tNAME/tCREATETIME/tMODIFYTIME/tCATEGORY"
+ID.content里面的内容即是博客的内容

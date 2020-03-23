@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ragsharer-新增文章</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/code_pretty.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    
+    
+  <body onload="prepareEditor()">
+    <!-- fixed nav bar -->
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item" href="index.html">主页</a>
+          <a class="blog-nav-item" href="#">类别</a>
+          <a class="blog-nav-item" href="#">关于</a>
+          <a class="blog-nav-item active" href="new.html">新增</a>
+        </nav>
+      </div>
+    </div>
+      
+    
+      
+    <div class="container">
+      <!-- 在派生页面，类似的标签并非原始的语义 -->
+      <div class="blog-header">
+        <h1 class="blog-title" id="the-blog-title">新增</h1>
+        <p class="lead blog-description" id="the-blog-description">在此处撰写一篇新的技术文章，打开本页面的频率越高，进步就越快</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8">
+
+        <div class="post-meta">
+        <p class="post-meta-describe">标题</p><input class="form-control post-meta-item" id="the-post-meta-title" placeholder="简明扼要的标题"><p class="clear-line">.</p>
+        <p class="post-meta-describe">类别</p><select class="form-control post-meta-item" id="the-post-meta-category"><option>默认类别</option></select><p class="clear-line">.</p>
+        <p class="post-meta-remark">文章的日期将被自动设置为当前的日期。</p><p class="clear-line">.</p>
+        <p class="post-meta-describe">内容</p><textarea class="form-control post-meta-item" id="the-post-content" style="height:500px;" placeholder="请在此输入HTML代码"></textarea><p class="clear-line">.</p>
+        <p class="post-meta-describe">认证</p><input type="password" class="form-control post-meta-item" id="the-post-password" placeholder="输入密码确认您的身份"><p class="clear-line">.</p>
+        <button type="button" id="the-submit-btn" class="btn btn-info" style="width:100px" onclick="submitNewPost()">提交</button>
+        <p class="post-meta-remark"></p><p class="clear-line">.</p>
+
+        </div>          
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>帮助</h4>
+            <p>右侧将显示常用的提醒信息，以加快撰写的速度。更新这部分信息，需要改写new.html文件。</p>
+          </div>
+          <div class="sidebar-module">
+            <h4>代码片段</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Hello World</a></li>
+              <li><a href="#">Hello World Again</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>提示</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Hello World</a></li>
+              <li><a href="#">Hello World</a></li>
+              <li><a href="#">Hello World</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+      </div><!-- /.row -->
+    </div>
+      
+    <footer class="blog-footer">
+      <p>钟典基于<a href="http://www.bootcss.com">Bootstrap</a>与<a href="http://www.asp.net/web-api">ASP.NET WebAPI技术</a>构建</p>
+      <p>
+        <a href="#">回顶端</a>
+      </p>
+    </footer>
+      
+
+    <!-- use CDN to enhance the speed -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/code_pretty.js"></script>
+    <script src="js/RagSharer.js"></script>
+  </body>
+</html>

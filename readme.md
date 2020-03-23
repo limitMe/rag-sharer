@@ -1,0 +1,3 @@
+RagSharer是limitMe自建的第一代博客系统
+
+基于Bootstrap和Asp.net 4.5 WebAPI，通过文本文件前后端没有分离，基于文本文件识别博客文章，发表文章仅使用固定密码验证。
